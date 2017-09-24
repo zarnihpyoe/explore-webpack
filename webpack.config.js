@@ -7,6 +7,10 @@ module.exports = {
         app: './src/index.js',
         print: './src/print.js',
     },
+    devtool: 'inline-source-map',       // source map for easier debug (don't do this for production)
+    devServer: {                        // telling webpack-dev-server
+        contentBase: './dist',            // - to serve files from ./dist on localhost:8080
+    },
     plugins: [
         new CleanWebpackPlugin([ 'dist' ]),
         new HtmlWebpackPlugin({
