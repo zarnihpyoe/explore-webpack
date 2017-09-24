@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/zarnihpyoe/explore_webpack#readme",
   "devDependencies": {
+    "css-loader": "^0.28.7",
     "shx": "^0.2.2",
+    "style-loader": "^0.18.2",
     "webpack": "^3.6.0"
   },
   "dependencies": {
