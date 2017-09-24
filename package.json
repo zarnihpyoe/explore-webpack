@@ -1,0 +1,27 @@
+{
+  "name": "explore_webpack",
+  "version": "0.0.1",
+  "description": "Experimenting webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack && shx cp src/index.html dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zarnihpyoe/explore_webpack.git"
+  },
+  "author": "Zarni Hpyoe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zarnihpyoe/explore_webpack/issues"
+  },
+  "homepage": "https://github.com/zarnihpyoe/explore_webpack#readme",
+  "devDependencies": {
+    "shx": "^0.2.2",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
