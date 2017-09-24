@@ -1,6 +1,7 @@
 const path = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack')
 
 module.exports = {
@@ -18,6 +19,7 @@ module.exports = {
             title: 'Output Management'
         }),
         new webpack.HotModuleReplacementPlugin(),
+        new UglifyJSPlugin(),                       // minify output bundle
     ],
     output: {
         filename: '[name].bundle.js',
